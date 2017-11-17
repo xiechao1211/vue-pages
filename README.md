@@ -5,6 +5,9 @@
 ## Build Setup
 
 ``` bash
+更改文件有 config/index.js build/webpack.base.conf.js build/webpack.dev.conf.js build/webpack.prod.conf.js
+另外，src下增加了pages目录，页面目录需要重新构建，并且不能使用vue-router 只能使用传统a链接的方式跳转（该项功能待优化）
+
 # install dependencies
 npm install
 
