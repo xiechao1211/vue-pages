@@ -25,7 +25,7 @@ function getEntry(globPath) {
   return entries;
 }
 var pages = getEntry('src/pages/**/*.html');
-
+// console.log(pages)
 //获取html文件上级目录
 // paths.push(path.basename(path.resolve(entry,'../')))
 var htmlPlugins = [];
@@ -45,7 +45,7 @@ for (var pathname in pages) {
   }
   htmlPlugins.push(new HtmlWebpackPlugin(conf));
 }
-
+// console.log(htmlPlugins)
 
 
 var webpackConfig = merge(baseWebpackConfig, {
